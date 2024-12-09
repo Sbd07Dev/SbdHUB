@@ -71,8 +71,8 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shlexware/Orion/main/source")))()
 
 local Window = Fluent:CreateWindow({
-    Title = " Nome Do Seu Hub | Blox Fruits",
-    SubTitle = "Version 2",
+    Title = " Sbd HUb | Blox Fruits",
+    SubTitle = "Version 1.0",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
@@ -103,7 +103,7 @@ OrionLib:MakeNotification(
     )
 _G.lakala = true
 
-setclipboard("Nome Do Seu Hub Is The Best")
+setclipboard("Sbd HUB Is The Powerful Script")
 
 --Place Id Check
 local id = game.PlaceId
@@ -136,7 +136,7 @@ OldNamecall = hookmetamethod(game, "__namecall", newcclosure(function(...)
 	if (getgenv().ED_AntiKick.CheckCaller and not checkcaller() or true) and stringlower(getnamecallmethod()) == "kick" and ED_AntiKick.Enabled then
 		if getgenv().ED_AntiKick.SendNotifications then
 			StarterGui:SetCore("SendNotification", {
-				Title = "Nome Do Seu Hub",
+				Title = "Sbd HUB",
 				Text = "The script has successfully intercepted an attempted kick.",
 				Icon = "rbxassetid://88147973848189",
 				Duration = 2,
@@ -151,7 +151,7 @@ end))
 
 if getgenv().ED_AntiKick.SendNotifications then
 	StarterGui:SetCore("SendNotification", {
-		Title = "Nome Do Seu Hub",
+		Title = "Sbd HUB",
 		Text = "Anti-Kick script loaded!",
 		Icon = "rbxassetid://88147973848189",
 		Duration = 3,
@@ -2722,8 +2722,8 @@ end
 
 
 Tabs.Main:AddButton({
-        Title = "Nome Do Seu Hub Discord Server",
-        Description = "Very important",
+        Title = "Biel Community Discord",
+        Description = "Entra no Discord do meu parceiro Biel Scripts",
         Callback = function()
         setclipboard("Discord de vocês")
         end
