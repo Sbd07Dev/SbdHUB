@@ -72,7 +72,7 @@ local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shl
 
 local Window = Fluent:CreateWindow({
     Title = " Sbd HUB | O MELHOR 😎",
-    SubTitle = "Version 1.0.1",
+    SubTitle = "Version 1.0.2",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
@@ -84,7 +84,7 @@ local Tabs = {
     Setting = Window:AddTab({ Title = "Configurações", Icon = "rbxassetid://88147973848189" }),
     Stats = Window:AddTab({ Title = "Status", Icon = "rbxassetid://88147973848189" }),
     Player = Window:AddTab({ Title = "Jogador", Icon = "rbxassetid://88147973848189" }),
-    Teleport = Window:AddTab({ Title = "Teleporte", Icon = "rbxassetid://88147973848189" }),
+    Teleport = Window:AddTab({ Title = "Teleportar", Icon = "rbxassetid://88147973848189" }),
     Fruit = Window:AddTab({ Title = "Fruta", Icon = "rbxassetid://88147973848189" }),
     Raid = Window:AddTab({ Title = "Raid", Icon = "rbxassetid://88147973848189" }),
     Race = Window:AddTab({ Title = "Raça V4", Icon = "rbxassetid://88147973848189" }),
@@ -95,10 +95,10 @@ local Options = Fluent.Options
 do
 OrionLib:MakeNotification(
         {
-            Name = "Notification",
-            Content = "Please Wait For Loading Code",
+            Name = "Notificação",
+            Content = "Por favor, aguarde o script carregar!",
             Image = "rbxassetid://88147973848189",
-            Time = 7
+            Time = 6
         }
     )
 _G.lakala = true
@@ -2722,10 +2722,10 @@ end
 
 
 Tabs.Main:AddButton({
-        Title = "Biel Community Discord",
-        Description = "Entra no Discord do meu parceiro Biel Scripts",
+        Title = "Biel Community",
+        Description = "Discord do meu parceiro Biel Scripts",
         Callback = function()
-        setclipboard("Discord de vocês")
+        setclipboard("https://discord.gg/BbVgMzna")
         end
         })
 local Farming = Tabs.Main:AddSection("Farming")
@@ -3256,7 +3256,7 @@ local Mastery = Tabs.Main:AddSection("Mastery Farm")
     local SliderHealt = Tabs.Main:AddSlider("SliderHealt", {
         Title = "Health (%) Mob",
         Description = "",
-        Default = 25,
+        Default = 30,
         Min = 0,
         Max = 100,
         Rounding = 1,
@@ -6981,7 +6981,7 @@ Tabs.Shop:AddButton({
 local Mastery = Tabs.Shop:AddSection("Misc Items")
 
 Tabs.Shop:AddButton({
-	Title = "Refund Stats",
+	Title = "Resetar Stats",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","1")
@@ -6989,7 +6989,7 @@ Tabs.Shop:AddButton({
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Reroll Race",
+	Title = "Girar Raça",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","1")
@@ -7437,7 +7437,7 @@ Tabs.Misc:AddButton({
 local Mastery = Tabs.Misc:AddSection("Day")
 
 Tabs.Misc:AddButton({
-	Title = "Remove Fog",
+	Title = "Remover Fog",
 	Description = "",
 	Callback = function()
         NoFog()
@@ -7524,8 +7524,8 @@ end)
 end
 OrionLib:MakeNotification(
     {
-        Name = "Notification",
-        Content = "Concluidono carregamento do Código, você pode usar o script agora!",
+        Name = "Carregamento do script:",
+        Content = "Concluido o carregamento do Código, você pode usar o script agora!",
         Image = "rbxassetid://88147973848189",
         Time = 5
     }
