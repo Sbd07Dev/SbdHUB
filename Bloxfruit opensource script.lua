@@ -71,8 +71,8 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shlexware/Orion/main/source")))()
 
 local Window = Fluent:CreateWindow({
-    Title = " Sbd HUb | Blox Fruits",
-    SubTitle = "Version 1.0",
+    Title = " Sbd HUB | O MELHOR 😎",
+    SubTitle = "Version 1.01",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
@@ -103,7 +103,7 @@ OrionLib:MakeNotification(
     )
 _G.lakala = true
 
-setclipboard("Sbd HUB Is The Powerful Script")
+setclipboard("https://discord.com/users/1278104008141045878")
 
 --Place Id Check
 local id = game.PlaceId
