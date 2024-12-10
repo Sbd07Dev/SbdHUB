@@ -72,7 +72,7 @@ local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shl
 
 local Window = Fluent:CreateWindow({
     Title = " Sbd HUB | O MELHOR 😎",
-    SubTitle = "Version 1.01",
+    SubTitle = "Version 1.0.1",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
@@ -80,15 +80,15 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "rbxassetid://88147973848189" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "rbxassetid://88147973848189" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "rbxassetid://88147973848189" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "rbxassetid://88147973848189" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "rbxassetid://88147973848189" }),
-    Fruit = Window:AddTab({ Title = "Fruit", Icon = "rbxassetid://88147973848189" }),
+    Main = Window:AddTab({ Title = "Principal", Icon = "rbxassetid://88147973848189" }),
+    Setting = Window:AddTab({ Title = "Configurações", Icon = "rbxassetid://88147973848189" }),
+    Stats = Window:AddTab({ Title = "Status", Icon = "rbxassetid://88147973848189" }),
+    Player = Window:AddTab({ Title = "Jogador", Icon = "rbxassetid://88147973848189" }),
+    Teleport = Window:AddTab({ Title = "Teleporte", Icon = "rbxassetid://88147973848189" }),
+    Fruit = Window:AddTab({ Title = "Fruta", Icon = "rbxassetid://88147973848189" }),
     Raid = Window:AddTab({ Title = "Raid", Icon = "rbxassetid://88147973848189" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "rbxassetid://88147973848189" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "rbxassetid://88147973848189" }),
+    Race = Window:AddTab({ Title = "Raça V4", Icon = "rbxassetid://88147973848189" }),
+    Shop = Window:AddTab({ Title = "Loja", Icon = "rbxassetid://88147973848189" }),
 	Misc = Window:AddTab({ Title = "Misc", Icon = "rbxassetid://88147973848189" }),
 }
 local Options = Fluent.Options
@@ -152,9 +152,9 @@ end))
 if getgenv().ED_AntiKick.SendNotifications then
 	StarterGui:SetCore("SendNotification", {
 		Title = "Sbd HUB",
-		Text = "Anti-Kick script loaded!",
+		Text = "O script foi carregado!",
 		Icon = "rbxassetid://88147973848189",
-		Duration = 3,
+		Duration = 4,
 	})
 end
 --Flag Player
@@ -7525,7 +7525,7 @@ end
 OrionLib:MakeNotification(
     {
         Name = "Notification",
-        Content = "Done Loading Code You Can Use Script Now",
+        Content = "Concluidono carregamento do Código, você pode usar o script agora!",
         Image = "rbxassetid://88147973848189",
         Time = 5
     }
@@ -7534,7 +7534,7 @@ OrionLib:MakeNotification(
 
 Fluent:Notify({
     Title = "Sbd HUB",
-    Content = "Thanks for Use Sbd HUB",
+    Content = "Obrigado por usar Sbd HUB",
     Duration = 8
 })
 SaveManager:SetLibrary(Fluent)
